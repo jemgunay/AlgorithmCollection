@@ -3,6 +3,7 @@ package algorithm;
 import java.util.EmptyStackException;
 
 public class Stack<T> {
+	// ArrayList based stack implementation
 	private ArrayList<T> stackArray = new ArrayList<T>();
 	
 	/*
@@ -44,9 +45,18 @@ public class Stack<T> {
 	public void empty() {
 		stackArray.clear();
 	}
+	
+	/*
+	 * Get the number of objects in the stack
+	 * @return the number of objects in the stack
+	 */
+	public int count() {
+		return stackArray.size();
+	}
 
 	/*
 	 * Check if stack contains an object
+	 * @param the object to be compared against stack contents
 	 * @return true if object exists, false if it does not
 	 */
 	public boolean contains(T data) {

@@ -11,31 +11,31 @@ public class StackTest {
 	@Test
 	public void performTest() {
 		// create and push
-		Stack<String> list = new Stack<String>();
-		list.push("This");
-		list.push("is");
-		list.push("a");
-		list.push("test");
+		Stack<String> stack = new Stack<String>();
+		stack.push("This");
+		stack.push("is");
+		stack.push("a");
+		stack.push("test");
 		// peak
-		Assert.assertEquals("test", list.peek());
+		Assert.assertEquals("test", stack.peek());
 		
 		// pop
-		Assert.assertEquals("test", list.pop());
-		Assert.assertEquals("a", list.pop());
+		Assert.assertEquals("test", stack.pop());
+		Assert.assertEquals("a", stack.pop());
 		
 		// contains
 		String s = "test";
-		list.push(s);
-		Assert.assertEquals(true, list.contains(s));
-		Assert.assertEquals(false, list.contains("example"));
+		stack.push(s);
+		Assert.assertEquals(true, stack.contains(s));
+		Assert.assertEquals(false, stack.contains("example"));
 	}
 
 	@Test(expected = EmptyStackException.class)
 	public void emptyStackExceptionTest() {
-		Stack<String> list = new Stack<String>();
-	    list.push("test");
-	    list.empty();
-		list.pop();
+		Stack<String> stack = new Stack<String>();
+	    stack.push("test");
+	    stack.empty();
+		stack.pop();
 	}
 	
 }
