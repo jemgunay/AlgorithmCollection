@@ -1,7 +1,6 @@
 # Algorithm Collection
 A collection of basic practice algorithm and data structure implementations written in Java.
 
-<br>
 
 ## Contents
 
