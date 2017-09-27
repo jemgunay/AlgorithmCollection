@@ -2,6 +2,7 @@
 A collection of basic practice algorithm and data structure implementations written in Java.
 
 <br>
+
 ## Contents
 
 * LinkedList, DoublyLinkedList, ArrayList, Stack and Queue data structure implementations.
