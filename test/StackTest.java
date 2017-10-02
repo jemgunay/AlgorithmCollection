@@ -2,9 +2,10 @@ package test;
 
 import org.junit.Assert;
 import org.junit.Test;
-import java.util.EmptyStackException;
 
-import algorithm.Stack;
+import algorithm.container.Stack;
+
+import java.util.EmptyStackException;
 
 public class StackTest {
 

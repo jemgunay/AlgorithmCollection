@@ -1,10 +1,10 @@
-package algorithm;
+package algorithm.container;
 
 public class ArrayList<T> implements List<T> {
 	// default array size of 10
 	private int size = 0, defaultArraySize = 10;
 	private Object[] dataArray = new Object[defaultArraySize];
-	
+
 	/*
 	 * Return object at index
 	 * @param index
@@ -15,6 +15,16 @@ public class ArrayList<T> implements List<T> {
 		checkBounds(index);
 		
 		return (T)dataArray[index];
+	}
+    
+	/*
+	 * Change the value at an index
+	 * @param index and new value
+	 */
+	public void set(int index, T value) {
+		checkBounds(index);
+		
+		dataArray[index] = value;
 	}
 	
 	/*
@@ -124,4 +134,16 @@ public class ArrayList<T> implements List<T> {
 		if (index < 0 || index > size || size == 0)
 			throw new IndexOutOfBoundsException();
 	}
+
+	/*
+	 * Convert list to an array and return it
+	 * @param array to copy list to
+	 * @return array representing the list
+	 */
+    public T[] toArray(T[] array) {
+		// copy array, casting type
+		System.arraycopy(dataArray, 0, array, 0, size);
+		return array;
+    }
+
 }

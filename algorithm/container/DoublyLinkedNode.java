@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.container;
 
 public class DoublyLinkedNode<T> {
 	public T data;

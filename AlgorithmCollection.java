@@ -1,8 +1,12 @@
-import algorithm.*;
+import java.util.Arrays;
+
+import algorithm.container.*;
+import algorithm.util.*;
 
 public class AlgorithmCollection {
 	
 	public static void main(String[] args) {
+		// container types
 		// linked list
 		LinkedList<String> linkedList = new LinkedList<String>();
 		linkedList.add("Example 1");
@@ -32,5 +36,15 @@ public class AlgorithmCollection {
 		queue.enQueue("Example 5");
 		result = queue.serve();
 		System.out.println(result);
+		
+		// sorting examples
+		String[] sortList = {"Fries", "Carrot", "Apple", "Bagel", "Egg", "Doughnut"}; 
+		Sorter sorter = new Sorter();
+		
+		// selection sort
+		System.out.println(Arrays.toString(sorter.selectionSort(sortList)));
+		System.out.println(Arrays.toString(sortList));
+		System.out.println(Arrays.toString(sorter.mergeSort(sortList)));
+		
 	}
 }

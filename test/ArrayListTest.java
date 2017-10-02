@@ -3,7 +3,7 @@ package test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import algorithm.ArrayList;
+import algorithm.container.ArrayList;
 
 public class ArrayListTest extends ListTest {
 

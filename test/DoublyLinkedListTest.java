@@ -3,7 +3,7 @@ package test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import algorithm.DoublyLinkedList;
+import algorithm.container.DoublyLinkedList;
 
 public class DoublyLinkedListTest extends ListTest {
 

@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.container;
 
 // List interface
 public interface List<T> {
@@ -10,4 +10,5 @@ public interface List<T> {
 	public boolean contains(T data);
 	public boolean isEmpty();
 	public int size();
+	public T[] toArray(T[] array);
 }

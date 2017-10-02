@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.container;
 
 import java.util.EmptyStackException;
 

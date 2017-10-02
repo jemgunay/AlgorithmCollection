@@ -1,6 +1,6 @@
 package test;
 
-import algorithm.List;
+import algorithm.container.List;
 
 public class ListTest {
 	// functions for returning lists as concatenated string

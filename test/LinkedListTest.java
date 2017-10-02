@@ -3,7 +3,7 @@ package test;
 import org.junit.Assert;
 import org.junit.Test;
 
-import algorithm.LinkedList;
+import algorithm.container.LinkedList;
 
 public class LinkedListTest extends ListTest {
 

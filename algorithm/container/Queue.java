@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.container;
 
 public class Queue<T> {
 	// DoublyLinkedList based queue implementation
