@@ -47,5 +47,7 @@ public class AlgorithmCollection {
 		Searcher searcher = new Searcher();
 		// sequential search
 		System.out.println("Sequential: " + searcher.sequentialSearch(wordList, "Egg"));
+		// sequential search
+		System.out.println("Binary: " + searcher.binarySearch(sorter.mergeSort(wordList), "Friess"));
 	}
 }
