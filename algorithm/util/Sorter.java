@@ -87,6 +87,29 @@ public class Sorter {
 			return mergedList;
 		}
 	}
+
+	/*
+	 * Use insertion sort to sort the ArrayList
+	 * @return sorted ArrayList
+	 */
+	public String[] insertionSort(String[] list) {
+		// copy array
+		String[] listCopy = list.clone();
+		
+		// iterate over all list elements
+		for (int i = 1; i < listCopy.length; i++) {
+			// iterate over all elements backwards starting with current element
+			for (int j = i; j > 0; j--) {
+				if (listCopy[j-1].compareTo(listCopy[j]) > 0) {
+					String temp = listCopy[j];
+					listCopy[j] = listCopy[j-1];
+					listCopy[j-1] = temp;
+				}
+			}
+		}
+		
+		return listCopy;
+	}
 	
 	/*
 	 * Get a subset of an array
