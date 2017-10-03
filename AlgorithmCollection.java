@@ -48,6 +48,6 @@ public class AlgorithmCollection {
 		// sequential search
 		System.out.println("Sequential: " + searcher.sequentialSearch(wordList, "Egg"));
 		// sequential search
-		System.out.println("Binary: " + searcher.binarySearch(sorter.mergeSort(wordList), "Friess"));
+		System.out.println("Binary: " + searcher.binarySearch(sorter.mergeSort(wordList), "Egg"));
 	}
 }

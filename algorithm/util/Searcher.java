@@ -1,8 +1,5 @@
 package algorithm.util;
 
-import algorithm.util.Sorter;
-import java.util.Arrays;
-
 public class Searcher {
 	
 	/*
@@ -27,8 +24,8 @@ public class Searcher {
 	 * @param pre-sorted String array
 	 * @return array index of target string, or -1 if not found
 	 */
-	public int binarySearch(String[] list, String target) {
-		return performBinarySearch(list, target, 0, list.length - 1);
+	public int binarySearch(String[] sortedList, String target) {
+		return performBinarySearch(sortedList, target, 0, sortedList.length - 1);
 	}
 	
 	private int performBinarySearch(String[] list, String target, int leftIndex, int rightIndex) {

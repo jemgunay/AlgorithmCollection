@@ -5,7 +5,7 @@ A collection of basic practice algorithm and data structure implementations writ
 
 ## Contents
 
-* Containers: LinkedList, DoublyLinkedList, ArrayList, Stack and Queue data structure implementations.
+* Data Structures/Containers: LinkedList, DoublyLinkedList, ArrayList, Stack and Queue.
 * Sort Algorithms: Selection, Merge and Insertion.
 * Search Algorithms: Sequential and Binary.
 * Data structure and algorithm implementations are located in the '/algorithm' directory/package.
